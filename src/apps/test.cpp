@@ -11,7 +11,17 @@ int main() {
 
 	StereoEyes system;
 
-	system.Calibrate(0, 1);
+	//Set Calibration imgs directory
+	system.setImgCalibDir("./img/calibration/myImg/");
+	//Get Calibration Images
+	system.getCalibImg(0, 0, 10);
+
+	//Calibrate Cameras from input Images
+	//system.Calib("./img/calibration/myImg/imgList.txt", 9, 6, 2.5);
+
+	//Generate Disparity Maps
+	//system.genDisparity(0,1);
+
 
 	std::cout << "FINISHED\n";
 

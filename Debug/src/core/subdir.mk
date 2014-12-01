@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/core/StereoEyes.cpp 
+../src/core/StereoEyes.cpp \
+../src/core/calibrateC.cpp 
 
 OBJS += \
-./src/core/StereoEyes.o 
+./src/core/StereoEyes.o \
+./src/core/calibrateC.o 
 
 CPP_DEPS += \
-./src/core/StereoEyes.d 
+./src/core/StereoEyes.d \
+./src/core/calibrateC.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

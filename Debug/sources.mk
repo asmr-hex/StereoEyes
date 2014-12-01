@@ -25,4 +25,5 @@ C_DEPS :=
 SUBDIRS := \
 src/core \
 src/apps \
+. \
 
